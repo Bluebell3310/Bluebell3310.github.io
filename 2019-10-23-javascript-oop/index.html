@@ -262,12 +262,9 @@ Slides: <a href="https://slides.com/sirla_potato/javascript-oop">https://slides.
 </div><p>先來了解一下this到底是什麼，所謂的this指的是實例出來後的&quot;那個&quot;物件，例如killerRabbit是一個object，這時候this就是指killerRabbit本身，同樣的blackRabbit裡面的this也是指blackRabbit這個物件本身</p>
 <p>接著看看內部結構，可拆成兩部分來看，constructor以及methods</p>
 <ul>
-<li>constructor
-<ul>
-<li>這是一種特殊的method，會在class剛建立時執行一遍
+<li>constructor<br>
+這是一種特殊的method，會在class剛建立時執行一遍
 跑跑看這段程式碼，在新建出Apple物件時，constructor就會印出一段文字</li>
-</ul>
-</li>
 </ul>
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2">
 <table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
@@ -289,15 +286,11 @@ Slides: <a href="https://slides.com/sirla_potato/javascript-oop">https://slides.
 <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">a</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">Apple</span>();
 </code></pre></td></tr></table>
 </div>
-</div><pre><code>    特別注意如果constructor有需要參數的話，在新建物件的時候，就要把給constructor的參數放入括號中，e.g. `let a = new Apple(&quot;Yummy&quot;)`
-</code></pre>
+</div><p>特別注意如果constructor有需要參數的話，在新建物件的時候，就要把給constructor的參數放入括號中，e.g. let a = new Apple(&ldquo;Yummy&rdquo;)</p>
 <ul>
-<li>methods
-<ul>
-<li>methods就是這個class的其他動作
+<li>methods<br>
+methods就是這個class的其他動作<br>
 在剛剛的Apple當中加入run看看，並且去呼叫他</li>
-</ul>
-</li>
 </ul>
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2">
 <table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
@@ -1153,13 +1146,10 @@ JavaScript沒有class的設計，你寫的那個class是ES6提供的語法糖
                 <a rel="author" href="http://netjagaimo.github.io">NetJagaimo</a>
             </li>
             <li style="word-break:break-all">
-                <strong>原文鏈接：</strong>
+                <strong>原文連結：</strong>
                 <a href="http://netjagaimo.github.io/2019-10-23-javascript-oop/">http://netjagaimo.github.io/2019-10-23-javascript-oop/</a>
             </li>
-            <li>
-                <strong>版權聲明：</strong>本作品採用
-                <a rel="license" href=""></a>進行許可，非商業轉載請註明出處（作者，原文鏈接），商業轉載請聯繫作者獲得授權。
-            </li>
+            
         </ul>
     </div>
  
