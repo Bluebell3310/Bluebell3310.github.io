@@ -100,9 +100,12 @@ Slides: &lt;a href=&#34;https://slides.com/sirla_potato/javascript-oop&#34;&gt;h
 &lt;/div&gt;&lt;p&gt;先來了解一下this到底是什麼，所謂的this指的是實例出來後的&amp;quot;那個&amp;quot;物件，例如killerRabbit是一個object，這時候this就是指killerRabbit本身，同樣的blackRabbit裡面的this也是指blackRabbit這個物件本身&lt;/p&gt;
 &lt;p&gt;接著看看內部結構，可拆成兩部分來看，constructor以及methods&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;constructor&lt;br&gt;
-這是一種特殊的method，會在class剛建立時執行一遍
+&lt;li&gt;constructor
+&lt;ul&gt;
+&lt;li&gt;這是一種特殊的method，會在class剛建立時執行一遍
 跑跑看這段程式碼，在新建出Apple物件時，constructor就會印出一段文字&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2&#34;&gt;
 &lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;
@@ -124,11 +127,15 @@ Slides: &lt;a href=&#34;https://slides.com/sirla_potato/javascript-oop&#34;&gt;h
 &lt;span style=&#34;color:#66d9ef&#34;&gt;let&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;a&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;new&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;Apple&lt;/span&gt;();
 &lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;特別注意如果constructor有需要參數的話，在新建物件的時候，就要把給constructor的參數放入括號中，e.g. let a = new Apple(&amp;ldquo;Yummy&amp;rdquo;)&lt;/p&gt;
+&lt;/div&gt;&lt;pre&gt;&lt;code&gt;    特別注意如果constructor有需要參數的話，在新建物件的時候，就要把給constructor的參數放入括號中，e.g. `let a = new Apple(&amp;quot;Yummy&amp;quot;)`
+&lt;/code&gt;&lt;/pre&gt;
 &lt;ul&gt;
-&lt;li&gt;methods&lt;br&gt;
-methods就是這個class的其他動作&lt;br&gt;
+&lt;li&gt;methods
+&lt;ul&gt;
+&lt;li&gt;methods就是這個class的其他動作
 在剛剛的Apple當中加入run看看，並且去呼叫他&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2&#34;&gt;
 &lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;

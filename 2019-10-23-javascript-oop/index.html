@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8" />
-    <meta name="generator" content="Hugo 0.65.3" />
+    <meta name="generator" content="Hugo 0.67.0" />
 
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -110,7 +110,7 @@ OOP = Object Oriented Programming (物件導向程式設計)
         <a href="http://netjagaimo.github.io/2019-10-23-javascript-oop/" title="JavaScript OOP">JavaScript OOP</a>
     </h1>
     <p class="mb-1 text-sm text-gray-500">
-        <span title=" 2019-10-23 12:20:00 CST">
+        <span title=" 2019-10-23 12:20:00 &#43;0800">
             <i class="iconfont icon-calendar" aria-hidden="true"></i> 23 Oct 2019
         </span>
 
@@ -262,9 +262,12 @@ Slides: <a href="https://slides.com/sirla_potato/javascript-oop">https://slides.
 </div><p>先來了解一下this到底是什麼，所謂的this指的是實例出來後的&quot;那個&quot;物件，例如killerRabbit是一個object，這時候this就是指killerRabbit本身，同樣的blackRabbit裡面的this也是指blackRabbit這個物件本身</p>
 <p>接著看看內部結構，可拆成兩部分來看，constructor以及methods</p>
 <ul>
-<li>constructor<br>
-這是一種特殊的method，會在class剛建立時執行一遍
+<li>constructor
+<ul>
+<li>這是一種特殊的method，會在class剛建立時執行一遍
 跑跑看這段程式碼，在新建出Apple物件時，constructor就會印出一段文字</li>
+</ul>
+</li>
 </ul>
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2">
 <table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
@@ -286,11 +289,15 @@ Slides: <a href="https://slides.com/sirla_potato/javascript-oop">https://slides.
 <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">a</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">Apple</span>();
 </code></pre></td></tr></table>
 </div>
-</div><p>特別注意如果constructor有需要參數的話，在新建物件的時候，就要把給constructor的參數放入括號中，e.g. let a = new Apple(&ldquo;Yummy&rdquo;)</p>
+</div><pre><code>    特別注意如果constructor有需要參數的話，在新建物件的時候，就要把給constructor的參數放入括號中，e.g. `let a = new Apple(&quot;Yummy&quot;)`
+</code></pre>
 <ul>
-<li>methods<br>
-methods就是這個class的其他動作<br>
+<li>methods
+<ul>
+<li>methods就是這個class的其他動作
 在剛剛的Apple當中加入run看看，並且去呼叫他</li>
+</ul>
+</li>
 </ul>
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2">
 <table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
