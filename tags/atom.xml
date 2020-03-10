@@ -6,10 +6,28 @@
     <description>Recent content in Tags on NetJagaimo&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 23 Oct 2019 12:20:00 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 10 Mar 2020 10:51:05 +0800</lastBuildDate>
     
 	<atom:link href="http://netjagaimo.github.io/tags/atom.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>python</title>
+      <link>http://netjagaimo.github.io/tags/python/</link>
+      <pubDate>Tue, 10 Mar 2020 10:51:05 +0800</pubDate>
+      
+      <guid>http://netjagaimo.github.io/tags/python/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>interpreter, python, compile</title>
+      <link>http://netjagaimo.github.io/tags/interpreter-python-compile/</link>
+      <pubDate>Tue, 10 Mar 2020 10:40:44 +0800</pubDate>
+      
+      <guid>http://netjagaimo.github.io/tags/interpreter-python-compile/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>javascript</title>

@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on NetJagaimo&#39;s Blog</title>
-    <link>http://netjagaimo.github.io/posts/</link>
-    <description>Recent content in Posts on NetJagaimo&#39;s Blog</description>
+    <title>Python on NetJagaimo&#39;s Blog</title>
+    <link>http://netjagaimo.github.io/categories/python/</link>
+    <description>Recent content in Python on NetJagaimo&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 10 Mar 2020 10:51:05 +0800</lastBuildDate>
     
-	<atom:link href="http://netjagaimo.github.io/posts/atom.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://netjagaimo.github.io/categories/python/atom.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -64,23 +64,6 @@
       <description>&lt;h1 id=&#34;python編譯與直譯探討&#34;&gt;Python編譯與直譯探討&lt;/h1&gt;
 &lt;p&gt;記得大一上計算機概論的時候，老師說過程式語言分成編譯式程式語言，以及直譯式程式語言，所謂直譯式程式語言就是一行一行這樣讀一行執行一行的程式語言。當時我就很納悶，阿程式語言不都是一行一行從上到下執行下去的嗎? 所以直譯式到底是在做什麼。&lt;/p&gt;
 &lt;p&gt;大三開始學python時，老師也提到說python是直譯式語言，又一次聽到這個不知所云的詞以及那不知所云的解釋，當下決心要好好的了解，於是就去請教了老師，結果居然得到了「google上面有很多資料可以看」的這種答覆，當下心理OS外加草尼瑪奔騰「啊我就是看了不懂才問你啊&amp;hellip;，叫我自己查，那要你何用(?」，一怒之下決心要把這件事給搞懂，於是就有了這篇文章。&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>JavaScript OOP</title>
-      <link>http://netjagaimo.github.io/2019-10-23-javascript-oop/</link>
-      <pubDate>Wed, 23 Oct 2019 12:20:00 +0800</pubDate>
-      
-      <guid>http://netjagaimo.github.io/2019-10-23-javascript-oop/</guid>
-      <description>&lt;div class=&#34;notices note&#34; &gt;&lt;p&gt;參考章節: &lt;a href=&#34;http://eloquentjavascript.net/06_object.html&#34;&gt;Ch6 The Secret Life Of Objects&lt;/a&gt;&lt;br&gt;
-Slides: &lt;a href=&#34;https://slides.com/sirla_potato/javascript-oop&#34;&gt;https://slides.com/sirla_potato/javascript-oop&lt;/a&gt;&lt;br&gt;
-環境: Windows10、Node.js(10.15.3)&lt;/p&gt;
-&lt;/div&gt;
-&lt;p&gt;&lt;img src=&#34;https://i.imgur.com/ZkaDEH2.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-&lt;h2 id=&#34;oop介紹&#34;&gt;OOP介紹&lt;/h2&gt;
-&lt;h3 id=&#34;簡介&#34;&gt;簡介&lt;/h3&gt;
-&lt;p&gt;OOP = Object Oriented Programming (物件導向程式設計)&lt;/p&gt;
-&lt;p&gt;將功能抽象化後，用程式表達出來的一種程式設計的方式，例如上面的圖，將兔子轉變為抽象化的描述方式&lt;/p&gt;</description>
     </item>
     
   </channel>

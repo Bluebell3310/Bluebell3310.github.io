@@ -11,18 +11,24 @@
     <meta name="generator" content="Saber v0.11.2">
     <meta name="author" content="NetJagaimo" />
     <meta name="keywords" content="netjagaimo, blog, python, javascript" />
-    <meta name="og:site_name" content="NetJagaimo&#39;s Blog" /><meta property="og:title" content="NetJagaimo&#39;s Blog" />
-    <meta property="og:type" content="website" />
-    <meta property="title" content="NetJagaimo&#39;s Blog">
-    <meta property="og:title" content="NetJagaimo&#39;s Blog">
-    <meta property="twitter:title" content="NetJagaimo&#39;s Blog">
-    <meta property="description" content="NetJagaimo&#39;s blog">
-    <meta property="og:description" content="NetJagaimo&#39;s blog">
-    <meta property="twitter:description" content="NetJagaimo&#39;s blog">
-    <meta property="og:type" content="website">
-    <title>NetJagaimo&#39;s Blog</title>
+    <meta name="og:site_name" content="NetJagaimo&#39;s Blog" /><meta property="og:title" content="Python編譯與直譯探討 - NetJagaimo&#39;s Blog" />
+    <meta property="og:type" content="article" />
+    <meta property="title" content="Python編譯與直譯探討 - NetJagaimo&#39;s Blog">
+    <meta property="og:title" content="Python編譯與直譯探討 - NetJagaimo&#39;s Blog">
+    <meta property="twitter:title" content="Python編譯與直譯探討 - NetJagaimo&#39;s Blog">
+    <meta property="description" content="Python編譯與直譯探討
+記得大一上計算機概論的時候，老師說過程式語言分成編譯式程式語言，以及直譯式程式語言，所謂直譯式程式語言就是一行一行這樣讀一行執行一行的程式語言。當時我就很納悶，阿程式語言不都是一行一行從上到下執行下去的嗎? 所以直譯式到底是在做什麼。
+大三開始學python時，老師也提到說python是直譯式語言，又一次聽到這個不知所云的詞以及那不知所云的解釋，當下決心要好好的了解，於是就去請教了老師，結果居然得到了「google上面有很多資料可以看」的這種答覆，當下心理OS外加草尼瑪奔騰「啊我就是看了不懂才問你啊&hellip;，叫我自己查，那要你何用(?」，一怒之下決心要把這件事給搞懂，於是就有了這篇文章。">
+    <meta property="og:description" content="Python編譯與直譯探討
+記得大一上計算機概論的時候，老師說過程式語言分成編譯式程式語言，以及直譯式程式語言，所謂直譯式程式語言就是一行一行這樣讀一行執行一行的程式語言。當時我就很納悶，阿程式語言不都是一行一行從上到下執行下去的嗎? 所以直譯式到底是在做什麼。
+大三開始學python時，老師也提到說python是直譯式語言，又一次聽到這個不知所云的詞以及那不知所云的解釋，當下決心要好好的了解，於是就去請教了老師，結果居然得到了「google上面有很多資料可以看」的這種答覆，當下心理OS外加草尼瑪奔騰「啊我就是看了不懂才問你啊&hellip;，叫我自己查，那要你何用(?」，一怒之下決心要把這件事給搞懂，於是就有了這篇文章。">
+    <meta property="twitter:description" content="Python編譯與直譯探討
+記得大一上計算機概論的時候，老師說過程式語言分成編譯式程式語言，以及直譯式程式語言，所謂直譯式程式語言就是一行一行這樣讀一行執行一行的程式語言。當時我就很納悶，阿程式語言不都是一行一行從上到下執行下去的嗎? 所以直譯式到底是在做什麼。
+大三開始學python時，老師也提到說python是直譯式語言，又一次聽到這個不知所云的詞以及那不知所云的解釋，當下決心要好好的了解，於是就去請教了老師，結果居然得到了「google上面有很多資料可以看」的這種答覆，當下心理OS外加草尼瑪奔騰「啊我就是看了不懂才問你啊&hellip;，叫我自己查，那要你何用(?」，一怒之下決心要把這件事給搞懂，於是就有了這篇文章。">
+    <meta property="og:type" content="article">
+    <title>Python編譯與直譯探討 - NetJagaimo&#39;s Blog</title>
 
-    <meta property="og:url" content="http://netjagaimo.github.io/" />
+    <meta property="og:url" content="http://netjagaimo.github.io/2020-03-10-python-interpreter-vs-compile/" />
 
     
     <meta property="og:image" content="/img/logo.png">
@@ -75,83 +81,13 @@
 </nav>
 
     <div id="container" class="container w-full flex flex-wrap mx-auto px-2 lg:pt-12 mt-10">
-    <section class="w-full lg:w-3/4 xl:w-3/4">
-        <div class="px-8 py-6 mt-6 lg:mt-0 leading-normal rounded shadow bg-white">
-                
-                <article >
-                    
-                    <div>
-    <h1 class="font-bold break-normal text-gray-800 pt-2 pb-2 text-2xl lg:text-3xl">
-        <a href="http://netjagaimo.github.io/2020-03-10-python-string-interning/" title="Python String Interning機制">Python String Interning機制</a>
-    </h1>
-    <p class="mb-1 text-sm text-gray-500">
-        <span title=" 2020-03-10 10:51:05 &#43;0800">
-            <i class="iconfont icon-calendar" aria-hidden="true"></i> 10 Mar 2020
-        </span>
+<section class="w-full lg:w-3/4 xl:w-3/4">
 
-        <span class="hidden xl:inline-block">
-            |
-            <i class="iconfont icon-book"></i>
-            1137 字
-        </span>
+    
+    <div class="px-8 py-6 mt-6 lg:mt-0 leading-normal rounded shadow bg-white">
 
-        <span class="hidden xl:inline-block">
-            |
-            <i class="iconfont icon-clock-o"></i>
-            3 分鐘讀完
-        </span>
-    </p>
-</div>
-
-                    
-                    <div class="post-content">
-                        <p>某天在玩弄python的時候(迷:住手!放開那個python!!)發現了一個有趣的現象:</p>
-<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2">
-<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
-</span></code></pre></td>
-<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-python" data-lang="python"><span style="color:#f92672">&gt;&gt;&gt;</span> a <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;helloworld&#34;</span>
-<span style="color:#f92672">&gt;&gt;&gt;</span> b <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;helloworld&#34;</span>
-<span style="color:#f92672">&gt;&gt;&gt;</span> id(a)
-<span style="color:#ae81ff">2917193150576</span>
-<span style="color:#f92672">&gt;&gt;&gt;</span> id(b)
-<span style="color:#ae81ff">2917193150576</span>
-
-<span style="color:#f92672">&gt;&gt;&gt;</span> a <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;hello world&#34;</span>
-<span style="color:#f92672">&gt;&gt;&gt;</span> b <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;hello world&#34;</span>
-<span style="color:#f92672">&gt;&gt;&gt;</span> id(a)
-<span style="color:#ae81ff">2917193150576</span>
-<span style="color:#f92672">&gt;&gt;&gt;</span> id(b)
-<span style="color:#ae81ff">2917193150640</span>
-</code></pre></td></tr></table>
-</div>
-</div><p>第一個例子，兩個變數指向同一個字串，然後記憶體位置一樣。<br>
-但是，當我們加入了空格，兩個變數都指向&quot;hello world&quot;時，記憶體位置卻不一樣了。<br>
-咦?? 為什麼會這樣?</p>
-                    </div>
-                    <p class="text-sm font-semibold pt-5 text-gray-700 ">
-                        <a href="http://netjagaimo.github.io/2020-03-10-python-string-interning/" class="px-5 py-2 inline-block bg-gray-200 rounded  hover:bg-gray-300">閱讀全文</a>
-                    </p>
-                </article>
-
-                <hr class="bg-gray-300 mt-10 mb-6">
-            
-                <article >
-                    
-                    <div>
+        
+        <div>
     <h1 class="font-bold break-normal text-gray-800 pt-2 pb-2 text-2xl lg:text-3xl">
         <a href="http://netjagaimo.github.io/2020-03-10-python-interpreter-vs-compile/" title="Python編譯與直譯探討">Python編譯與直譯探討</a>
     </h1>
@@ -174,72 +110,113 @@
     </p>
 </div>
 
-                    
-                    <div class="post-content">
-                        <h1 id="python編譯與直譯探討">Python編譯與直譯探討</h1>
+
+        <div class="md:hidden">
+            
+<p class="text-base font-bold py-2 yg:pb-6 text-gray-700">文章目錄</p>
+    <div class="sticky text-sm" style="top:6em;" id="menu-content">
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#編譯式語言-vs-直譯式語言">編譯式語言 vs. 直譯式語言</a></li>
+    <li><a href="#python是編譯還是直譯">Python是編譯還是直譯</a></li>
+  </ul>
+</nav>
+    </div>
+
+        </div> 
+
+        <div class="post-content">
+            <h1 id="python編譯與直譯探討">Python編譯與直譯探討</h1>
 <p>記得大一上計算機概論的時候，老師說過程式語言分成編譯式程式語言，以及直譯式程式語言，所謂直譯式程式語言就是一行一行這樣讀一行執行一行的程式語言。當時我就很納悶，阿程式語言不都是一行一行從上到下執行下去的嗎? 所以直譯式到底是在做什麼。</p>
 <p>大三開始學python時，老師也提到說python是直譯式語言，又一次聽到這個不知所云的詞以及那不知所云的解釋，當下決心要好好的了解，於是就去請教了老師，結果居然得到了「google上面有很多資料可以看」的這種答覆，當下心理OS外加草尼瑪奔騰「啊我就是看了不懂才問你啊&hellip;，叫我自己查，那要你何用(?」，一怒之下決心要把這件事給搞懂，於是就有了這篇文章。</p>
-                    </div>
-                    <p class="text-sm font-semibold pt-5 text-gray-700 ">
-                        <a href="http://netjagaimo.github.io/2020-03-10-python-interpreter-vs-compile/" class="px-5 py-2 inline-block bg-gray-200 rounded  hover:bg-gray-300">閱讀全文</a>
-                    </p>
-                </article>
+<h2 id="編譯式語言-vs-直譯式語言">編譯式語言 vs. 直譯式語言</h2>
+<p>首先來看看到底什麼是編譯式語言，什麼又是直譯式語言，其實概念沒有那麼複雜。</p>
+<ul>
+<li>
+<p>編譯式語言: 編譯這個字其實很簡單，從一個語言轉換到另一個語言就是編譯。而所謂編譯式語言指的是，這個程式語言需要先從高階程式語言轉換成機器語言之後才能執行。例如C會先轉換成機器語言，然後才能執行、而Java會先轉換成bytecode(<code>.class</code>檔)，然後才能在JVM虛擬機中執行。</p>
+</li>
+<li>
+<p>直譯式語言: 所謂的直譯，就是這個直接執行高階程式語言，中間無須經過編譯的過程。例如python會直接執行python程式碼，不須先轉換成其他語言之後才能執行、JavaScript也是，瀏覽器會直接直行JavaScript</p>
+</li>
+</ul>
+<h2 id="python是編譯還是直譯">Python是編譯還是直譯</h2>
+<p>但是如果對Python有一定了解，就會知道Python其實跟Java的運作方式很像，會先將程式碼<strong>編譯</strong>成bytecode之後，再將bytecode給虛擬機執行。</p>
+<p>那為何大家會說Python是直譯式語言，但卻說Java是編譯式語言?</p>
+<p>這是因為Java有明顯的編譯動作出現，Java的程式碼在運作前，一定要先經過編譯成<code>.class</code>檔案的動作，然後才能執行。
+但是Python編譯成bytecode檔案的這個動作是不明確的，使用的人不會明確的感受到Python有將程式碼編譯成bytecode的動作。另一個因素是，Python有提供互動式模式，而Java跟C都沒有，所以Python會看起來更像式直譯式語言。</p>
+<p>這個世界總是很複雜，很多事都不是非黑即白，程式語言也是一樣，Python既有編譯也有直譯，所以你要界定它到底是哪一個其實是很難的，只能說它比較像哪一個。</p>
+<blockquote>
+<p>參考: <a href="https://nedbatchelder.com/blog/201803/is_python_interpreted_or_compiled_yes.html">Is Python interpreted or compiled? Yes.</a></p>
+</blockquote>
 
-                <hr class="bg-gray-300 mt-10 mb-6">
+            <hr class="bg-gray-300 mt-8">
+
             
-                <article >
-                    
-                    <div>
-    <h1 class="font-bold break-normal text-gray-800 pt-2 pb-2 text-2xl lg:text-3xl">
-        <a href="http://netjagaimo.github.io/2019-10-23-javascript-oop/" title="JavaScript OOP">JavaScript OOP</a>
-    </h1>
-    <p class="mb-1 text-sm text-gray-500">
-        <span title=" 2019-10-23 12:20:00 &#43;0800">
-            <i class="iconfont icon-calendar" aria-hidden="true"></i> 23 Oct 2019
-        </span>
 
-        <span class="hidden xl:inline-block">
-            |
-            <i class="iconfont icon-book"></i>
-            7227 字
-        </span>
-
-        <span class="hidden xl:inline-block">
-            |
-            <i class="iconfont icon-clock-o"></i>
-            15 分鐘讀完
-        </span>
-    </p>
+            
+<div class="border-l-4 border-red-400 mx-auto bg-gray-200 text-gray-700 mt-5">
+    <div class="pt-2 copyright">
+        <ul class="list-none">
+            <li>
+                <strong>原文作者：</strong>
+                <a rel="author" href="http://netjagaimo.github.io">NetJagaimo</a>
+            </li>
+            <li style="word-break:break-all">
+                <strong>原文連結：</strong>
+                <a href="http://netjagaimo.github.io/2020-03-10-python-interpreter-vs-compile/">http://netjagaimo.github.io/2020-03-10-python-interpreter-vs-compile/</a>
+            </li>
+            
+        </ul>
+    </div>
+ 
 </div>
 
-                    
-                    <div class="post-content">
-                        <div class="notices note" ><p>參考章節: <a href="http://eloquentjavascript.net/06_object.html">Ch6 The Secret Life Of Objects</a><br>
-Slides: <a href="https://slides.com/sirla_potato/javascript-oop">https://slides.com/sirla_potato/javascript-oop</a><br>
-環境: Windows10、Node.js(10.15.3)</p>
-</div>
-<p><img src="https://i.imgur.com/ZkaDEH2.png" alt=""></p>
-<h2 id="oop介紹">OOP介紹</h2>
-<h3 id="簡介">簡介</h3>
-<p>OOP = Object Oriented Programming (物件導向程式設計)</p>
-<p>將功能抽象化後，用程式表達出來的一種程式設計的方式，例如上面的圖，將兔子轉變為抽象化的描述方式</p>
-                    </div>
-                    <p class="text-sm font-semibold pt-5 text-gray-700 ">
-                        <a href="http://netjagaimo.github.io/2019-10-23-javascript-oop/" class="px-5 py-2 inline-block bg-gray-200 rounded  hover:bg-gray-300">閱讀全文</a>
-                    </p>
-                </article>
 
-                <hr class="bg-gray-300 mt-10 mb-6">
-            
-            <p class="text-center">
-                <a  class="md:text-xl text-gray-700" href="/posts.html">↑ 文章歸檔 ↑</a>
-            </p>
         </div>
-    </section>
 
-    <div class="hidden md:block w-full lg:w-1/4 xl:w-1/4 px-6 text-gray-800 leading-normal">
+        
+        <div class="text-base md:text-sm text-gray-500 pt-6">
+                <a class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 hover:bg-gray-300"
+                    href="http://netjagaimo.github.io/tags/interpreter-python-compile.html">
+                    #interpreter, python, compile
+                </a>
+                                    
+            </div>
+        
 
-        <div class="lg:w-full mx-auto items-center justify-between">
+         
+        
+
+    </div>
+    
+
+    
+    <hr class="bg-gray-300 my-10">
+
+    
+        
+        
+        
+
+        
+
+
+<div class="p-8 mt-6 lg:mt-0 rounded shadow bg-white">
+    <h2 class="font-sans font-bold break-normal text-gray-700 px-2 pb-3 text-xl">相關文章</h2>
+    
+    <li><a href="/2019-10-23-javascript-oop/" class="underline text-orange-600">JavaScript OOP</a></li>
+    
+</div>
+
+
+    
+
+</section>
+
+
+<div class="hidden xl:text-sm xl:block xl:w-1/4 xl:px-6 ">
+
+    <div class="lg:w-full mx-auto items-center justify-between">
     <div class="bg-white shadow rounded overflow-hidden">
         <div class="bg-cover bg-auto mx-auto w-32 h-32 mt-5 rounded-full" style="background-image: url('/img/logo.png'); background-size: contain; background-repeat: no-repeat; background-position: center;"> </div>
         
@@ -330,8 +307,23 @@ Slides: <a href="https://slides.com/sirla_potato/javascript-oop">https://slides.
 
 
 
+    <div class="flex flex-col justify-between sticky top-0 pt-12 pb-4 -mt-10 text-gray-600">
+        <div class="bg-white shadow rounded p-4 mt-5">
+            
+<p class="text-base font-bold py-2 yg:pb-6 text-gray-700">文章目錄</p>
+    <div class="sticky text-sm" style="top:6em;" id="menu-content">
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#編譯式語言-vs-直譯式語言">編譯式語言 vs. 直譯式語言</a></li>
+    <li><a href="#python是編譯還是直譯">Python是編譯還是直譯</a></li>
+  </ul>
+</nav>
     </div>
 
+        </div>
+    </div>
+   
+</div> 
 
     </div>
     
