@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>compile on NetJagaimo&#39;s Blog</title>
+    <link>http://netjagaimo.github.io/tags/compile/</link>
+    <description>Recent content in compile on NetJagaimo&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 10 Mar 2020 10:40:44 +0800</lastBuildDate>
+    
+	<atom:link href="http://netjagaimo.github.io/tags/compile/atom.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Python編譯與直譯探討</title>
+      <link>http://netjagaimo.github.io/2020-03-10-python-interpreter-vs-compile/</link>
+      <pubDate>Tue, 10 Mar 2020 10:40:44 +0800</pubDate>
+      
+      <guid>http://netjagaimo.github.io/2020-03-10-python-interpreter-vs-compile/</guid>
+      <description>&lt;h1 id=&#34;python編譯與直譯探討&#34;&gt;Python編譯與直譯探討&lt;/h1&gt;
+&lt;p&gt;記得大一上計算機概論的時候，老師說過程式語言分成編譯式程式語言，以及直譯式程式語言，所謂直譯式程式語言就是一行一行這樣讀一行執行一行的程式語言。當時我就很納悶，阿程式語言不都是一行一行從上到下執行下去的嗎? 所以直譯式到底是在做什麼。&lt;/p&gt;
+&lt;p&gt;大三開始學python時，老師也提到說python是直譯式語言，又一次聽到這個不知所云的詞以及那不知所云的解釋，當下決心要好好的了解，於是就去請教了老師，結果居然得到了「google上面有很多資料可以看」的這種答覆，當下心理OS外加草尼瑪奔騰「啊我就是看了不懂才問你啊&amp;hellip;，叫我自己查，那要你何用(?」，一怒之下決心要把這件事給搞懂，於是就有了這篇文章。&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
