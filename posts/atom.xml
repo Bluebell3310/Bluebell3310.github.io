@@ -17,7 +17,7 @@
       <pubDate>Sun, 19 Apr 2020 16:31:54 +0800</pubDate>
       
       <guid>http://netjagaimo.github.io/2020-04-19-sticky-footer/</guid>
-      <description>&lt;p&gt;在寫網頁的時後有一個常常會碰到的問題，那就是當網頁內容少於網瀏覽器高度的時候，footer就不會固定在下方，而是隨著內容一起浮上來，像這張圖一樣
+      <description>&lt;p&gt;在寫網頁的時後有一個常常會碰到的問題，那就是當網頁內容少於瀏覽器高度的時候，footer就不會固定在下方，而是隨著內容一起浮上來，像這張圖一樣
 &lt;img src=&#34;http://netjagaimo.github.io/images/2020-04-19-sticky-footer/footer-bug-demo.PNG&#34; alt=&#34;&#34;&gt;
 解決的方法有很多種，但大多都有些複雜，而這篇文章分享的是一個利用flexbox的解法，很單純且彈性很高，一起看下去吧!&lt;/p&gt;</description>
     </item>

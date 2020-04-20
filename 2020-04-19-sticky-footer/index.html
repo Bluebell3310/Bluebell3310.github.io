@@ -16,13 +16,13 @@
     <meta property="title" content="CSS固定頁尾 - 使用flexbox的解法 - NetJagaimo&#39;s Blog">
     <meta property="og:title" content="CSS固定頁尾 - 使用flexbox的解法 - NetJagaimo&#39;s Blog">
     <meta property="twitter:title" content="CSS固定頁尾 - 使用flexbox的解法 - NetJagaimo&#39;s Blog">
-    <meta property="description" content="在寫網頁的時後有一個常常會碰到的問題，那就是當網頁內容少於網瀏覽器高度的時候，footer就不會固定在下方，而是隨著內容一起浮上來，像這張圖一樣
+    <meta property="description" content="在寫網頁的時後有一個常常會碰到的問題，那就是當網頁內容少於瀏覽器高度的時候，footer就不會固定在下方，而是隨著內容一起浮上來，像這張圖一樣
 
 解決的方法有很多種，但大多都有些複雜，而這篇文章分享的是一個利用flexbox的解法，很單純且彈性很高，一起看下去吧!">
-    <meta property="og:description" content="在寫網頁的時後有一個常常會碰到的問題，那就是當網頁內容少於網瀏覽器高度的時候，footer就不會固定在下方，而是隨著內容一起浮上來，像這張圖一樣
+    <meta property="og:description" content="在寫網頁的時後有一個常常會碰到的問題，那就是當網頁內容少於瀏覽器高度的時候，footer就不會固定在下方，而是隨著內容一起浮上來，像這張圖一樣
 
 解決的方法有很多種，但大多都有些複雜，而這篇文章分享的是一個利用flexbox的解法，很單純且彈性很高，一起看下去吧!">
-    <meta property="twitter:description" content="在寫網頁的時後有一個常常會碰到的問題，那就是當網頁內容少於網瀏覽器高度的時候，footer就不會固定在下方，而是隨著內容一起浮上來，像這張圖一樣
+    <meta property="twitter:description" content="在寫網頁的時後有一個常常會碰到的問題，那就是當網頁內容少於瀏覽器高度的時候，footer就不會固定在下方，而是隨著內容一起浮上來，像這張圖一樣
 
 解決的方法有很多種，但大多都有些複雜，而這篇文章分享的是一個利用flexbox的解法，很單純且彈性很高，一起看下去吧!">
     <meta property="og:type" content="article">
@@ -99,7 +99,7 @@
         <span class="hidden xl:inline-block">
             |
             <i class="iconfont icon-book"></i>
-            1202 字
+            1199 字
         </span>
 
         <span class="hidden xl:inline-block">
@@ -124,16 +124,13 @@
       <ul>
         <li><a href="#原理">原理</a></li>
       </ul>
-    </li>
-    <li><a href="#參考">參考</a></li>
-  </ul>
 </nav>
     </div>
 
         </div> 
 
         <div class="post-content">
-            <p>在寫網頁的時後有一個常常會碰到的問題，那就是當網頁內容少於網瀏覽器高度的時候，footer就不會固定在下方，而是隨著內容一起浮上來，像這張圖一樣
+            <p>在寫網頁的時後有一個常常會碰到的問題，那就是當網頁內容少於瀏覽器高度的時候，footer就不會固定在下方，而是隨著內容一起浮上來，像這張圖一樣
 <img src="/images/2020-04-19-sticky-footer/footer-bug-demo.PNG" alt="">
 解決的方法有很多種，但大多都有些複雜，而這篇文章分享的是一個利用flexbox的解法，很單純且彈性很高，一起看下去吧!</p>
 <h2 id="html">HTML</h2>
@@ -269,7 +266,6 @@
 <p>首先看看body的部分，<code>flex-direction: column</code>將預設的row排列變為column，否則裡面的元素都會變成橫向排列。接著<code>min-height</code>將body的高度稱開到瀏覽器的窗口大小。<br>
 然後看main，這邊的<code>flex-grow: 1</code>利用了flex的特性，flex-grow在計算時，會先扣掉具有固定高度的元素，接著再將剩餘元素依照grow給定的比例分配。<br>
 因此我們可以利用這個特性，將main的高度分配為扣掉header以及footer高度後的全部(這邊設定1, 2, 3&hellip;皆可，大於零就好)，這樣就可以完成我們要的效果了!</p>
-<h2 id="參考">參考</h2>
 
 <div class="notices note" ><p>參考資料:<br>
 Lea Verou(2016)。<em>CSS Secrets中文版：解決網頁設計問題的有效秘訣</em>。臺北市：碁峰資訊。</p>
@@ -455,9 +451,6 @@ Lea Verou(2016)。<em>CSS Secrets中文版：解決網頁設計問題的有效�
       <ul>
         <li><a href="#原理">原理</a></li>
       </ul>
-    </li>
-    <li><a href="#參考">參考</a></li>
-  </ul>
 </nav>
     </div>
 
